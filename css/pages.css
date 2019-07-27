@@ -1,0 +1,20 @@
+.aboutus{
+    margin-top: 120px;
+    text-align: center
+}
+.aboutus img{
+    width: 400px;
+    height: 300px;
+}
+.media-body{
+    text-align: left;
+    float: right
+}
+.aboutus h1{
+    font-size: 49px;
+    font-weight: bold;
+    color: #192a56;
+}
+.aboutus p{
+    padding: 10px;
+}
