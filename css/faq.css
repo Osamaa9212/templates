@@ -1,0 +1,64 @@
+.card-header{
+    background-color: white 
+}
+.faq .card {
+    margin: 30px 0px;
+    box-shadow: 0 0 4px 0px #d6d3d3;
+}
+.btn-link {
+    font-size: 20px;
+    font-family: "lato";
+    font-weight: 800;
+    color: black;
+    width: 80%;
+    text-align: left
+}
+
+.btn-link:hover{
+    text-decoration: none;
+    color: #EB4D4B
+}
+.btn-link:focus, .btn-link.focus{
+    text-decoration: none;
+    color:#DF4C4B 
+}
+.faq p:first-of-type {
+    color: #b5b5b5;
+    margin: 7px 0px 42px;
+}
+
+.bold {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 600;
+    margin: 60px 0px 17px;
+}
+.thin {
+    font-weight: 100;
+    color: black
+}
+.card-header{
+    position: relative
+}
+.faq i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 31px;
+    font-size: 25px;
+    cursor: pointer
+}
+
+@media (max-width:767px) {
+    .btn-link{
+        white-space: normal
+    }
+    .bold{
+        font-size: 30px
+    }
+}
+
+
+
+

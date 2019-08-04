@@ -109,6 +109,60 @@ $(document).ready(function(){
 */
 
 
-
+$(document).ready(function(){
     
+    $("body").niceScroll({
+        cursorcolor:"black",
+        cursorwidth:"10px",
+        cursorborder:"0px solid red"
+    });
+    //$(".nicescroll-box").niceScroll(".wrap",{cursorcolor:"red
+}); 
+
+$(window).scroll(function(){
+    if($("html,body").scrollTop() > 400 ){
+        $(".scroll").fadeIn(100)
+    }else{
+        $(".scroll").fadeOut(100)
+
+} 
+    var scrollBottom = $(window).scrollTop() + $(window).height();
+    
+    if($(window).scrollTop() + $(window).height()-50 >=1410 && $(window).scrollTop() + $(window).height()-50 <=2014){
+        console.log("right");
+        console.log($(".hiring").height()+1410);
+        $('.scroll').css({
+            "color":"white"
+        })
+    }else{
+         $('.scroll').css({
+            "color":"#D33B3B"
+        })
+    }
+    
+});
+
+$(window).on("load",function(){
+    
+    $(".loading-overlay").fadeOut(500);
+    
+});
+
+$('.btn-link').click(function () {
+    if($(this).next(".faq i").attr("class") === "fas fa-arrow-down"){
+        $(this).next(".faq i").attr("class","fas fa-arrow-up");
+        $(this).parent().parent().parent().siblings().children(".faq").css({"display":"none"})
+    }else{
+        $(this).next(".faq i").attr("class","fas fa-arrow-down")
+    }
+ 
+    
+})
+    
+
+   $('.faq i').click(function() {
+      console.log($(this).parent(".collapse").attr("id"))
+    });
+
+
 
