@@ -164,5 +164,13 @@ $('.btn-link').click(function () {
       console.log($(this).parent(".collapse").attr("id"))
     });
 
+$(".scroll").click(function () {
+    
+    $("html,body").animate({
+        scrollTop:0
+    },600);
+    
+});
+
 
 

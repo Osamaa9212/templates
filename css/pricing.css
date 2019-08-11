@@ -1,5 +1,7 @@
 .pricing {
-    margin-top: 90px
+    margin-top: 50px;
+    background: #F4F4F4;
+    padding:20px
 }
 
 .det{
@@ -12,19 +14,21 @@
     margin: 70px
 }
 .pricing .card-title {
-    text-transform: uppercase;
-    font-size: 28px;
-    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: 500;
     border-bottom: 1px solid #a7a7a747;
-
 }
 
-.pricing .card-title,
-.pricing h2{
-border-bottom: 1px solid #ffffffb3;
-    padding-bottom: 13px;
+.pricing .card-title span{
+    display: inline-block;
+    padding-left: 30px
 }
 
+
+.pricing h2 {
+    color: #FA3467
+}
 span {
     display: block;
     padding: 10px
@@ -65,19 +69,19 @@ span {
 .row{
     margin: 0px
 }
-.card{
-    margin-bottom: 30px;
-        border-top-right-radius: 62px;
-    border-bottom-left-radius: 62px;
+
+.card {
+    border-radius: 5px
 }
+.card-body {
+    
 }
 
-@media (min-width: 1200px) {
-.pricing .container {
-    max-width: 1350px !important;
-    }
-
+.pricing .row:first-of-type .card .card-title{
+    display: inline-block
 }
+
+
 
 .underline {
     position: relative
@@ -92,6 +96,158 @@ span {
     width: 100%;
     background-color: red
 }
+
+.inline{
+    display: inline-block
+}
+.inline:nth-of-type(2) {
+    color: #FA3467
+}
+
+.pricing .container .row:first-of-type .card-body h2 {
+   display: none
+}
+
+.pricing .col{
+    margin-bottom: 30px;
+    border-radius: 4px
+}
+
+/*first and third item*/
+.pricing .container .row:first-of-type .col:nth-of-type(1),
+.pricing .container .row:first-of-type .col:nth-of-type(3){
+    background: white
+}
+
+.pricing .container .row:first-of-type .col:nth-of-type(1) .btn-primary,
+.pricing .container .row:first-of-type .col:nth-of-type(3) .btn-primary{
+    color: #FA3467;
+    transition: all 200ms ease-in-out
+}
+.pricing .container .row:first-of-type .col:nth-of-type(1) .btn-primary:hover,
+.pricing .container .row:first-of-type .col:nth-of-type(3) .btn-primary:hover{
+    color: white;
+}
+
+/*second item*/
+.pricing .container .row:first-of-type .col:nth-of-type(2) {
+    background: linear-gradient(to right bottom,#370CA0,#6F08A0,#8A0CA0);
+   
+    z-index: 1;
+    box-shadow: 0 0 9px #c2bfbf;
+}
+
+.col .pricing-item { 
+    padding: 61px 30px 37px;
+}
+
+
+
+.col:nth-of-type(1) .pricing-item h2,
+.col:nth-of-type(3) .pricing-item h2 {
+    color: black
+}
+
+.col:nth-of-type(1) .pricing-item span,
+.col:nth-of-type(3) .pricing-item span {
+    color: black
+}
+
+
+.col:nth-of-type(2) .pricing-item h2{
+    color: white;
+}
+
+
+
+
+.col:nth-of-type(2) .pricing-item h2 span{
+    color: #FA3467;
+    display: inline-block;
+    
+} 
+
+.col .pricing-item h2{
+    font-size: 30px
+}
+
+
+.col .pricing-item h2 span{
+    color: #FA3467;
+    font-size: 35px;
+    display: inline-block;
+    float: right;
+    padding: 0px
+}
+
+.pricing-item span {
+    color: white;
+    font-size: 17px;
+    font-family: "montserrat";
+}
+
+.pricing .col .btn-primary {
+    border:none;
+    transition: all 200ms ease-in-out;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: #FA3467;
+    color: white !important
+}
+
+.pricing .container {
+    margin-top: 40px
+}
+
+ 
+
+
+@media (min-width:992px){
+    .pricing .container .row:first-of-type .col:nth-of-type(2){
+        transform: scale(1.09);
+    }
+}
+
+/*media for iphon4*/
+
+@media(max-width:320px) {
+    
+.pricing-item span {
+    font-size: 11px;
+}
+    
+}
+
+@media (max-width:400px) {
+    
+   .col .pricing-item h2 span {
+    color: #FA3467;
+    font-size: 24px;
+    display: inline-block;
+    float: right;
+    padding: 0px;
+    }
+    
+    .col .pricing-item h2 {
+        font-size: 25px;
+    }
+    .pricing .col .btn-primary {
+        width: 103px;
+    }
+    
+    .scroll {
+
+        right: 6px
+
+        }   
+    
+}
+
+.zero-left{
+    padding-left: 0px
+}
+
+
 
 
 
